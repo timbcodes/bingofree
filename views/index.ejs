@@ -6,35 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bingo Free!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="../public/css/normalize.css" />
     <link rel="stylesheet" href="../public/css/main_style.css" />
 </head>
 
 <body>
     <div class="top_bar">
-        <div class="last_five"></div>
-        <div class="current_number"></div>
-        <div class="nav_buttons"></div>
+        <div class="last_five">
+            <p class="last_five_text">Last 5 Numbers</p>
+        </div>
+        <div class="current_number">
+            <p class="current_text">Current Number</p>
+        </div>
+        <div class="nav_buttons">
+            <button class="new_button" id="new_button">New Game</button>
+        </div>
+        <div class="total_calls">
+            <p class="total_of">Total Calls: <span id="total_number"></span></p>
+        </div>
     </div>
 
     <div class="main_display">
-        <div class="letter_b"></div>
+        <div class="outer_ball" id="b_ball">
+            <div class="letter_b">
+                <h1 class="b_text">B</h1>
+            </div>
+        </div>
         <div class="b_numbers"></div>
-        <div class="letter_i"></div>
+        <div class="outer_ball" id="i_ball">
+            <div class="letter_i">
+                <h1 class="i_text">I</h1>
+            </div>
+        </div>
         <div class="i_numbers"></div>
-        <div class="letter_n"></div>
+        <div class="outer_ball" id="n_ball">
+            <div class="letter_n">
+                <h1 class="n_text">N</h1>
+            </div>
+        </div>
         <div class="n_numbers"></div>
-        <div class="letter_g"></div>
+        <div class="outer_ball" id="g_ball">
+            <div class="letter_g">
+                <h1 class="g_text">G</h1>
+            </div>
+        </div>
         <div class="g_numbers"></div>
-        <div class="letter_o"></div>
+        <div class="outer_ball" id="o_ball">
+            <div class="letter_o">
+                <h1 class="o_text">O</h1>
+            </div>
+        </div>
         <div class="o_numbers"></div>
     </div>
 
     <div class="bottom_btn">
-        <div class="draw_btn"></div>
+        <div class="draw_btn">
+            <button class="draw_one" id="draw_one">Draw One</button>
+        </div>
     </div>
 
-    <div class="logo"></div>
-</body>
+    <div class="logo">
+        <div class="logo_text">
+            <a href="http://www.timb.codes" class="logo_link">
+                <h1 class="my_logo">
+                    {timb.<span class="logo_callout">codes</span>}
+                </h1>
+            </a>
+        </div>
+    </div>
 
+    <div class="copy_text">
+        <p class="copyright">
+            &copy; 2022
+            <a href="http://www.timb.codes" class="link_to_page">{timb.<span class="logo_callout">codes</span>}</a
+        >
+      </p>
+    </div>
+    <div class="disclaimer">
+      <p class="disc_text">For entertainment purposes only.</p>
+    </div>
+  </body>
 </html>

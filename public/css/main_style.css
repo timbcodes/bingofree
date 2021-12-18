@@ -1,8 +1,78 @@
 body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+    height: calc(100vh - 18px);
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-    color: #00b7ff;
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    display: inline-block;
+    background-color: #0b9e2d;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px -1px #000000;
+    color: #fff;
+}
+
+.nav_buttons {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.main_display {
+    border-top: 8px solid #0b9e2d;
+    border-bottom: 8px solid #0b9e2d;
+}
+
+.bottom_btn {
+    position: absolute;
+    bottom: 8%;
+    right: 46%;
+    border: 2px solid #0b9e2d;
+    border-radius: 10px;
+}
+
+.draw_one {
+    margin: 20px 40px;
+}
+
+.copy_text {
+    position: absolute;
+    bottom: 0;
+    right: 48%;
+}
+
+.logo {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 35px;
+}
+
+.my_logo {
+    margin: 0;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.disclaimer {
+    position: absolute;
+    bottom: 0;
+}
+
+.logo_callout {
+    color: #0eb566;
 }
